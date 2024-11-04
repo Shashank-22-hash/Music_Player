@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-player">
+    <!-- Song Info -->
+    <div class="song-info">
+      <h2 id="song-title">Title</h2>
+      <p id="artist">Artist</p>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="audio-player" controls hidden></audio>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="prev-btn">Prev</button>
+      <button id="play-btn" >Play</button>
+      <button id="pause-btn" hidden>Pause</button>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <input type="range" id="progress-bar" value="0">
+    </div>
+
+    <!-- Volume Control -->
+    <div class="volume-control">
+      <label for="volume-slider">Volume:</label>
+      <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+    </div>
+
+    <!-- Playlist -->
+    <ul id="playlist">
+      <!-- Playlist items will be dynamically added here -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
